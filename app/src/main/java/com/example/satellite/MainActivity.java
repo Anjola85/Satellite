@@ -45,11 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         p %= 60;
         double seconds =  p;
 
-        System.out.println( day + " " + "days " + hour
-                + " " + "hours " + minutes + " "
-                + "minutes " + seconds + " "
-                + "seconds ");
-        result = String.valueOf(hour) + " hours " + String.valueOf(minutes) + " minutes" + " and " + String.format("%.1f", seconds) + " seconds";
+
+        result = String.valueOf(day) + " days " +  String.valueOf(hour) + " hours " + String.valueOf(minutes) + " minutes" + " and " + String.format("%.1f", seconds) + " seconds";
         ((TextView) findViewById(R.id.answer)).setText(result);
     }
 }
